@@ -15,7 +15,7 @@ Get started with RabbitMQ, a message broker, that enables multiple processes to 
 
 ## Read
 
-1. Read the RabbitMQ Hello World tutorial
+1. Read the [RabbitMQ Tutorial - Hello, World!](https://www.rabbitmq.com/tutorials/tutorial-one-python.html)
 1. Read the code and comments in this repo.
 
 ## Execute the Producer/Sender
@@ -55,6 +55,7 @@ Use your skills to keep coding enjoyable.
 
 ## Reference
 
+- [RabbitMQ Tutorial - Hello, World!](https://www.rabbitmq.com/tutorials/tutorial-one-python.html)
 - [Using Python environments in VS Code](https://code.visualstudio.com/docs/python/environments)
 
 ## Multiple Terminals
