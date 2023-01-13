@@ -56,3 +56,7 @@ Use your skills to keep coding enjoyable.
 ## Reference
 
 - [Using Python environments in VS Code](https://code.visualstudio.com/docs/python/environments)
+
+## Multiple Terminals
+
+![Mac Example](screenshot.png)
