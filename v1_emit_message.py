@@ -2,7 +2,8 @@
     This program sends a message to a queue on the RabbitMQ server.
 
     Author: Denise Case
-    Date: January 14, 2023
+    Editied by: Zak Davlin
+    Date: January 25, 2023
 
 """
 
@@ -15,9 +16,11 @@ conn = pika.BlockingConnection(pika.ConnectionParameters("LOCALHOST"))
 ch = conn.channel()
 # use the channel to declare a queue
 ch.queue_declare(queue="hello")
+#Create Body Variable
+a="Put Message here"
 # use the channel to publish a message to the queue
-ch.basic_publish(exchange="", routing_key="hello", body="Hello World!")
+ch.basic_publish(exchange="", routing_key="hello", body=a)
 # print a message to the console for the user
-print(" [x] Sent 'Hello World!'")
+print(f" [x] Sent '{a}'")
 # close the connection to the server
 conn.close()
