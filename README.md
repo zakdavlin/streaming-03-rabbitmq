@@ -94,5 +94,5 @@ Each of the version 2 programs include an error as well.
 - [Using Python environments in VS Code](https://code.visualstudio.com/docs/python/environments)
 
 ## Multiple Terminals
-![Davlin 2 Terminal Screenshot](C:\Users\zdavl\Documents\GitHub\streaming-03-rabbitmq\Two Terminals.JPG "Two Terminal Screenshot")
+![Davlin Two Terminals](Two Terminals.JPG)
 ![Mac Example](screenshot.png)
