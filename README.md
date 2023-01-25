@@ -10,6 +10,7 @@ Get started with RabbitMQ, a message broker, that enables multiple processes to 
 1. View / Command Palette - then Python: Select Interpreter
 1. Select your conda environment. See the references below for more.
 1. Use the terminal to install pika into your active environment. 
+1. Also make sure to download erlang and RabbitMQ!
 
 `conda install -c conda-forge pika`
 
@@ -72,20 +73,20 @@ and a consistent, reusable approach to building code.
 Each of the version 2 programs include an error as well. 
 
 1. Find the error and fix it. 
-1. Compare the structure of the version 2 files. 
+1. Compare the structure of the version 2 files. File 2 creates a function for sending messages. File 1 simply sends a message using only the host, queue and message provided.
 1. Modify the docstrings on all your files.
 1. Include your name and the date.
 1. Imports always go at the top, just after the file docstring.
-1. Imports should be one per line - why?
+1. Imports should be one per line - why? This makes it much easier to read.
 1. Then, define your functions.
 1. Functions are reuable logic blocks.
 1. Everything the function needs comes in through the arguments.
 1. A function may - or may not - return a value. 
 1. When we open a connection, we should close the connection. 
-1. Which of the 4 files will always close() the connection?
+1. Which of the 4 files will always close() the connection? The first emit message file closes the connection everytime. The other emit file depends on if the function requirements are met to run. The two listening programs run until told not to.
 1. Search GitHub for if __name__ == "__main__":
-1. How many hits did you get? 
-1. Learn and understand this common Python idiom.
+1. How many hits did you get? Around 40 Million pieces of code
+1. Learn and understand this common Python idiom. __name__=="__main__" Checks to see if the variable __name__, which refers to the name of the file, is where the code is being run from. When combined with an if statement it allows another programmer to import the file and use the functions with out running the code the fuctions were orginally made for.
 
 ## Reference
 
@@ -93,5 +94,5 @@ Each of the version 2 programs include an error as well.
 - [Using Python environments in VS Code](https://code.visualstudio.com/docs/python/environments)
 
 ## Multiple Terminals
-
+![Davlin 2 Terminal Screenshot](C:\Users\zdavl\Documents\GitHub\streaming-03-rabbitmq\Two Terminals.JPG "Two Terminal Screenshot")
 ![Mac Example](screenshot.png)
